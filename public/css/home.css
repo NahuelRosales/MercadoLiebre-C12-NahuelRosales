@@ -1,0 +1,71 @@
+.main-home {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    margin: 10px 0;
+
+}
+
+.card-content {
+    position: relative;
+    border-top: 1px solid var(--gris-claro);
+    margin: 15px;
+
+}
+
+.card-content .icon-truck{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid green;
+    color: green;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    
+
+}
+.card-content .icon-truck i{
+    position: relative;
+    top: 4.5px;
+    left: 4.5px;
+
+}
+
+.card-content .product-info{
+    padding: 15px 0;
+
+}
+.card-content .product-info p{
+    font-size: var(--price);
+}
+
+.card-content .product-info p:nth-child(2n){
+    font-size: var(--discount-description);
+    color: var(--verde);
+}
+
+
+.card-content .product-name{
+    display: none;
+    font-size: var(--discount-description);
+    color: var(--gris-oscuro);
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-weight: unset;
+}
+
+/* MEDIA QUERIES */
+
+    /* TABLET */
+@media (min-width: 361px){
+    
+
+}
+    /* DESKTOP */
+@media (min-width: 769px){
+    
+}

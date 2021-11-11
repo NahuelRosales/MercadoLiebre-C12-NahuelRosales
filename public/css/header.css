@@ -1,0 +1,35 @@
+/* HEADER */
+
+header {
+    background-color: var(--amarillo);
+    padding-bottom: 25px;
+}
+
+.logo {
+    width: 120px;
+    margin: 0 0 10px 35px;
+    padding-top: 25px;
+}
+
+.search-bar {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.quota {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.burger-menu {
+    font-size: 20px;
+    text-align: center;
+    margin: 25px auto 0;
+    padding: 8.3px;
+    border-radius: 15%;
+    height: 40px;
+    width: 40px;
+    background-color: var(--celeste);
+    color: white;
+    
+}
