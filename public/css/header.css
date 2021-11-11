@@ -18,7 +18,15 @@ header {
 
 .quota {
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
+}
+
+.nav-site{
+    display:none;
+}
+
+.nav-login{
+    display:none;
 }
 
 .burger-menu {
@@ -31,5 +39,27 @@ header {
     width: 40px;
     background-color: var(--celeste);
     color: white;
-    
 }
+
+
+/* MEDIA QUERIES */
+
+    /* TABLET */
+    @media (min-width: 361px){
+        .nav-site{
+            display:block;
+        }
+        .nav-login{
+            display:block;
+        
+        }
+        .burger-menu {
+            display: none;
+        }
+        
+    
+    }
+        /* DESKTOP */
+    @media (min-width: 769px){
+        
+    }
