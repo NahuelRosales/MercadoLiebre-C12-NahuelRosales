@@ -2,23 +2,54 @@
 
 header {
     background-color: var(--amarillo);
-    padding-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
 }
 
 .logo {
+    width: 50%;
+    padding: 0 5px;
+}
+.logo img{
     width: 120px;
-    margin: 0 0 10px 35px;
-    padding-top: 25px;
 }
 
 .search-bar {
-    margin-left: 20px;
-    display: inline-block;
+    width: 50%;
+
+    padding-left: 5px;
+    position: relative;
 }
+
+.search-bar input {
+    font-size: var(--text);
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: none;
+    padding-left: 5px;
+    padding-right: 25px;
+
+}
+.search-bar button {
+    position: absolute;
+    border: none;
+    color: var(--gris-oscuro);
+    background-color: inherit;
+    right: 8px;
+    top: 8px;
+    
+}
+
 
 .quota {
     text-align: center;
     margin: 15px 0;
+    width: 100%;
 }
 
 .nav-site{
@@ -46,19 +77,55 @@ header {
 
     /* TABLET */
     @media (min-width: 361px){
-        .nav-site{
-            display:block;
-        }
-        .nav-login{
-            display:block;
-        
-        }
-        .burger-menu {
-            display: none;
-        }
         
     
     }
+    /* TABLET 2 */ 
+@media (min-width: 600px){
+    .logo {
+        width: 30%;
+    }
+    .logo img {
+        width: 160px;
+    }
+    .search-bar {
+        width: 30%;
+    }
+    .quota {
+        width: 40%;
+    }
+    nav {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .nav-site{
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-login{
+        width: 45%;
+        display:flex;
+        justify-content: space-evenly;
+
+    
+    }
+    .nav-login li{
+        padding-left: 4px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    
+    
+}
+
+
+
+
         /* DESKTOP */
     @media (min-width: 769px){
         
