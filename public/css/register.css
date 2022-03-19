@@ -1,0 +1,102 @@
+.formRegister{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.formRegister h2{
+    font-size: var(--title);
+}
+.formRegister label{
+    font-size: 15px;
+    font-weight: 700;
+    width: 92%;
+    margin: 5px 0;
+}
+.formRegister input{
+    font-size: var(--text);
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    background-color: none;
+    padding-left: 5px;
+    padding-right: 25px;
+    margin: 7px 0;
+}
+.registrarse{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.userName{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.email{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.birthDate{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.address{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.userProfile{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 15px;
+}
+
+.userProfile input{
+    height: 15px;
+
+}
+.userProfile ul li{
+    width: ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.interest{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 15px;
+}
+
+.interest input{
+    height: 15px;
+    margin-right: 10px;
+}
+.interest ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
