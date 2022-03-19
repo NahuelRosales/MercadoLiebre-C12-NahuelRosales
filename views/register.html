@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -41,65 +41,81 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
-    <form action="" method="GET" class="formRegister">
+    <form action="/" method="GET" class="formRegister">
         <h2 class="registrarse">Registrarse</h2>
-        <div class="name">
-            <!-- <label for="nombre">Nombre y apellido</label> -->
-            <input type="text" name="name" id="nombre" placeholder="Nombre y apellido">
-        </div>
-        <div class="userName">
-            <!-- <label for="nombre">Nombre de usuario</label> -->
-            <input type="text" name="user" id="nombre" placeholder="Nombre de usuario">
-        </div>
-        <div class="email">
-            <!-- <label for="email">Email:</label> -->
-            <input type="email" name="email" id="E-mail" placeholder="Email">
-        </div>
-        <div class="birthDate">
-            <label for="birthDate">Fecha de nacimiento</label>
-            <input type="date" name="birthDate" id="birthDate">
-        </div>
-        <div class="address">
-            <label for="address">Domicilio</label>
-            <input type="text" name="address" id="address" placeholder="Domicilio">
-        </div>
-        <div class="userProfile">
-            <label for="userProfile">Perfil de usuario</label>
-            <ul>
-                <li><input type="radio" name="userProfile" id="userProfile" value="comprador">Comprador</input></li>
-                <li><input type="radio" name="userProfile" id="userProfile" value="vendedor">Vendedor</input></li>
-            </ul>
-        </div>
-        <div class="interest">
-            <label for="interest">Categorías de interés</label>
-            <ul>
-                <li><input type="checkbox">Electro</input></li>
-                <li><input type="checkbox">Moda</input></li>
-                <li><input type="checkbox">Hogar</input></li>
-                <li><input type="checkbox">Juguetería</input></li>
-                <li><input type="checkbox">Vida Sana</input></li>
-            </ul>
-            
-        </div>
-        <div class="avatar">
-            <label for="avatar">Foto de usuario</label>
-            <input type="file" multiple accept="image/png, image/jpeg" id="avatar">
-        </div>
-        <div class="pass">
-            <label for="pass">Contraseña:</label>
-            <input type="password" name="pass" id="pass">
-        </div>
-        <div class="passConfirm">
-            <label for="pass">Confirmar contraseña:</label>
-            <input type="password" name="pass" id="pass">
-        </div>
-        <div class="submitForm submitRegister">
-            <input type="submit" value="Enviar" href="/home">
-        </div>
-        <div class="resetForm resetRegister">
-            <input type="reset" value="Borrar">
-        </div>
+            <div class="info">
+                <div class="subInfo"></div>
+                    <div class="subInfoInfo">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" name="name" id="nombre" placeholder="Nombre y apellido">
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="nombre">Nombre de usuario</label>
+                        <input type="text" name="user" id="nombre" placeholder="Nombre de usuario">
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="E-mail" placeholder="Email">
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="birthDate" >Fecha de nacimiento</label>
+                        <input type="date" name="birthDate" id="birthDate" class="date">
+                    </div>
+                    <div class="subInfoInfo">
+                        <label for="address">Domicilio</label>
+                        <input type="text" name="address" id="address" placeholder="Domicilio">
+                    </div>
+            </div>
+            <div class="info">
+                
+                    <label for="userProfile">Perfil de usuario</label>
+                    <ul class="userProfile">
+                        <li><input type="radio" name="userProfile" id="userProfile" value="comprador">Comprador</input></li>
+                        <li><input type="radio" name="userProfile" id="userProfile" value="vendedor">Vendedor</input></li>
+                    </ul>
+                
+            </div>
+            <div class="info">
+                <label for="interest">Categorías de interés</label>
+                <ul class="interest">
+                    <li><input type="checkbox">Electro</input></li>
+                    <li><input type="checkbox">Moda</input></li>
+                    <li><input type="checkbox">Hogar</input></li>
+                    <li><input type="checkbox">Juguetería</input></li>
+                    <li><input type="checkbox">Vida Sana</input></li>
+                </ul>
+                
+            </div>
+            <div class="info">
+                <div class="subInfoInfo">
+                    <label for="avatar">Foto de usuario</label>
+                    <input class="avatar" type="file" multiple accept="image/png, image/jpeg" id="avatar">
+                </div>
+            </div>
 
+            <div class="info">    
+                <div class="subInfoInfo">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Elegí tu contraseña">
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="subInfoInfo">
+                    <label for="pass">Confirmar contraseña:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Repetí tu contraseña">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="submitForm submitRegister">
+                    <input type="submit" value="Enviar">
+                </div>
+
+                <div class="resetForm resetRegister">
+                    <input type="reset" value="Borrar">
+                </div>
+            </div>
 
 
     </form>
