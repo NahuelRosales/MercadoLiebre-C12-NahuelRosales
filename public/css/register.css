@@ -1,5 +1,9 @@
 .formRegister{
-    margin: 20px;
+    width: 90%;
+
+    margin: 0 auto;
+
+
 }
 
 .formRegister h2{
@@ -26,7 +30,12 @@
     flex-direction: column;
     
 }
-.subInfoInfo label{
+.error-message{
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 10px 5px 0px;
     
 }
 .subInfoInfo input, .date{
@@ -88,6 +97,11 @@
     border: none;
     background: var(--celeste);
     border-radius: 5px;
+    transition: 300ms;
+}
+
+.buttons:hover input{
+    background-color: #0022AA;
 }
 .resetForm input{
     background: none;
@@ -98,17 +112,11 @@
  /*desktop*/
     @media (min-width: 640px){
         .formRegister{
-            width: 70%;
-            margin: 15px 50px 0 50px;
-            ;
-            
+            width: 60%;
+            margin: 0 auto;
         }
         .info{
             width: 100%;
-        }
-        .subInfoInfo input, .date{
-            
-            
         }
         .userProfile li{
             width: 30%;

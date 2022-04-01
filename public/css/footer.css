@@ -1,12 +1,12 @@
 
 /* FOOTER */
-footer {
+.footer-home {
     text-align: center;
     background-color: white;
     
 }
 
-footer i {
+.footer-home i {
     font-size: 2em;
     color: var(--celeste);
     margin-bottom: 10px;
@@ -27,6 +27,22 @@ footer i {
     color: var(--gris-oscuro);
     font-size: var(--text);
     text-align: left;
-    margin: 50px 0;
+    margin: 40px 0;
     padding: 0 0 30px 20px;
+}
+
+
+@media (min-width: 760px){
+    .footer-home{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-article{
+        width: 33%;
+    }
+    .copy {
+        width: 100%;
+    }
 }

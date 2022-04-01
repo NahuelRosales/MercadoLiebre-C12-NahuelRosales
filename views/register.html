@@ -13,9 +13,9 @@
 
 <body>
     <header header-home>
-        <div class="logo">
+        <a href="/" class="logo">
             <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
-        </div>
+        </a>
         <div class="search-bar">
             <input type="text" placeholder="Buscar productos, marcas">
             <button>
@@ -47,23 +47,28 @@
                 <div class="subInfo"></div>
                     <div class="subInfoInfo">
                         <label for="nombre">Nombre y apellido</label>
-                        <input type="text" name="name" id="nombre" placeholder="Nombre y apellido">
+                        <input type="text" name="name" id="nombre" placeholder="Nombre y apellido" required>
+                        <span class="error-message">Campo obligatorio</span>
                     </div>
                     <div class="subInfoInfo">
                         <label for="nombre">Nombre de usuario</label>
-                        <input type="text" name="user" id="nombre" placeholder="Nombre de usuario">
+                        <input type="text" name="user" id="nombre" placeholder="Nombre de usuario" required>
+                        <span class="error-message">Campo obligatorio</span>
                     </div>
                     <div class="subInfoInfo">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="E-mail" placeholder="Email">
+                        <input type="email" name="email" id="E-mail" placeholder="Email" required>
+                        <span class="error-message">Debes ingresar un mail válido</span>
                     </div>
                     <div class="subInfoInfo">
                         <label for="birthDate" >Fecha de nacimiento</label>
-                        <input type="date" name="birthDate" id="birthDate" class="date">
+                        <input type="date" name="birthDate" id="birthDate" class="date" required>
+                        <span class="error-message">Debes seleccionar una fecha</span>
                     </div>
                     <div class="subInfoInfo">
                         <label for="address">Domicilio</label>
-                        <input type="text" name="address" id="address" placeholder="Domicilio">
+                        <input type="text" name="address" id="address" placeholder="Domicilio" required>
+                        <span class="error-message">Debes ingresar tu domicilio</span>
                     </div>
             </div>
             <div class="info">
@@ -73,6 +78,7 @@
                         <li><input type="radio" name="userProfile" id="userProfile" value="comprador">Comprador</input></li>
                         <li><input type="radio" name="userProfile" id="userProfile" value="vendedor">Vendedor</input></li>
                     </ul>
+                    <span class="error-message">Debes elegir una opción</span>
                 
             </div>
             <div class="info">
@@ -97,6 +103,7 @@
                 <div class="subInfoInfo">
                     <label for="pass">Contraseña:</label>
                     <input type="password" name="pass" id="pass" placeholder="Elegí tu contraseña">
+                    <span class="error-message">Ingresa mínimo 8 carácteres</span>
                 </div>
             </div>
 
@@ -104,6 +111,7 @@
                 <div class="subInfoInfo">
                     <label for="pass">Confirmar contraseña:</label>
                     <input type="password" name="pass" id="pass" placeholder="Repetí tu contraseña">
+                    <span class="error-message">Las contraseñas no coinciden</span>
                 </div>
             </div>
 
